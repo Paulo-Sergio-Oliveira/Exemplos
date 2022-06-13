@@ -10,24 +10,20 @@
     <script>
       const cores = ["Verde", "Amarelo", "Azul", "Branco"]; // Criação e atribuição de diferentes valores no Array cores
 
-      for (const index in cores) {
-        // Para (criação da constante index em cores) - Iteração dos valores do Array cores
+      for (const index in cores) { // Para (criação da constante index em cores) - Iteração dos valores do Array cores        
         console.log(index, cores[index]); // Imprime valor da variável index e valor de determinada posição do Array cores
       }
 
-      const pessoa = {
-        // Criação do objeto pessoa
+      const pessoa = { // Criação do objeto pessoa       
         nome: "Bruno", // Criação e atribuição de valor no atributo nome
         idade: 25, // Criação e atribuição de valor no atributo idade
       };
 
-      for (const index in pessoa) {
-        // Para (criação da constante index em pessoa) - Iteração dos atributos do Objeto pessoa
+      for (const index in pessoa) { // Para (criação da constante index em pessoa) - Iteração dos atributos do Objeto pessoa        
         console.log(`${index} - ${pessoa[index]}`); // Imprime valor da variável index e valor do atributo do Objeto pessoa
       }
 
-      const produtos = [
-        // Criação do objeto produtos
+      const produtos = [ // Criação do objeto produtos     
         { descricao: "Resma Ofício", valor: 11.5, quantidade: 10 }, // Criação de um Array e criação e atribuição de valores nos atributos descricao, valor e quantidade
         { descricao: "Lapis preto", valor: 0.5, quantidade: 3 }, // Criação de um Array e criação e atribuição de valores nos atributos descricao, valor e quantidade
         { descricao: "Transferidor plastico", valor: 1.2, quantidade: 4 }, // Criação de um Array e criação e atribuição de valores nos atributos descricao, valor e quantidade
@@ -35,8 +31,7 @@
 
       let total = 0; // Criação e inicialização de valor na variável total
 
-      for (const index in produtos) {
-        // Para (criação da constante index em produtos) - Iteração dos atributos do Objeto produtos
+      for (const index in produtos) { // Para (criação da constante index em produtos) - Iteração dos atributos do Objeto produtos
         const { valor, quantidade } = produtos[index]; // Criação das contantes valor e quantidade e atribuição dos valores dos índices das variáveis de mesmo nome nos Arrays do Objeto produtos
 
         total += valor * quantidade; // Atribuição somando do produto do valor da variável valor multiplicado pelo valor da variável quantidade para o valor da variável total
@@ -46,12 +41,11 @@
 
       const numeros = [10, 11, 22, 23, 34, 45, 66, 17, 28, 93, 101]; // Criação e atribuição de diferentes valores no Array numeros
 
-      for (const numero of numeros) {
-        // Para (criação da constante numero de numeros) - Percorre Array numeros
+      for (const numero of numeros) { // Para (criação da constante numero de numeros) - Percorre Array numeros      
         console.log(numero); // Imprime a valor da variável numero
       }
 
-      const carros = [
+      const carros = [ // Criação do objeto carros
         { id: 1, modelo: "Corsa", marca: "Chevrolet", preco: 18000 }, // Criação de um Array e criação e atribuição de valores nos atributos id, modelo, marca e preco
         { id: 2, modelo: "Punto", marca: "Fiat", preco: 12000 }, // Criação de um Array e criação e atribuição de valores nos atributos id, modelo, marca e preco
         { id: 3, modelo: "Gol", marca: "Volkswagen", preco: 14000 }, // Criação de um Array e criação e atribuição de valores nos atributos id, modelo, marca e preco
@@ -61,8 +55,7 @@
 
       let total2 = 0; // Criação e inicialização de valor na variável total2
 
-      for (const carro of carros) {
-        // Para (criação da constante carro de carros) - Percorre Array do Objeto carros
+      for (const carro of carros) { // Para (criação da constante carro de carros) - Percorre Array do Objeto carros
         total2 += carro.preco; // Atribuição somando do valor do atributo preco do Array do Objeto carros para o valor da variável total2
       }
 
@@ -75,8 +68,7 @@
 
       const artigo = document.querySelectorAll("article > p"); // Criação da constante artigo e atribuição de todos os parágrafos de uma página HTML
 
-      for (const paragrafo of artigo) {
-        // Para (criação da constante paragrafo de artigos) - Percorre cada item da lista adicionando a classe lida em cada um dos elementos
+      for (const paragrafo of artigo) { // Para (criação da constante paragrafo de artigos) - Percorre cada item da lista adicionando a classe lida em cada um dos elementos    
         paragrafo.classList.add("read");
       }
 
